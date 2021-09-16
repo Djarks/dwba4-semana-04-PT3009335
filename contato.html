@@ -3,18 +3,58 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>CONTATO - IFSP - Pirituba - DWBA4</title>
+    <title>Contato - IFSP - Pirituba</title>
     <link rel="shortcut icon" href="Imagens/favicon.ico"/>
   </head>
   <body>
     <header id="cabecalho">
       <div align="right">
-        <a href="index.html">HOME</a> | <a href="contato.html">CONTATO</a> | <a href="sobre.html">SOBRE</a>
+        <a href="index.html">HOME</a> | <a href="eventos.html">EVENTOS</a> | <a href="contato.html">CONTATO</a> | <a href="sobre.html">SOBRE</a> | <a href="entrar.html">ENTRAR</a>
       </div>
+      <img src="Imagens/Logo.jpg"/>
     </header>
     <main>
+      <h1><strong>Mande uma mensagem</strong></h1>
+       <form action="action_page.html" method="POST" name="mensagem">
+      <ul>
+        <li>
+          <label for="name">Nome</label>
+            <input type="text" name="name" id="name" required><br>
+        </li>
+        <li>
+          <label for="email2">E-mail</label>
+            <input type="text" name="email2" id="email2" required><br>
+        </li>
+        <li>
+          <label for="telefone">Telefone</label>
+          <input type="text" name="telefone" id="telefone" required> (99) 99999-9999<br>
+        </li>
+        <li>
+          Assunto
+          <select name="assunto" required>
+            <option id="selectHeader"> -- Selecione -- </option>
+            <option value="recl">Reclamação</option>
+            <option value="sugest">Sugestão</option>
+          </select>
+        </li>
+        <li>
+          Mensagem<textarea></textarea>
+        </li>
+        <li>
+          <fieldset>
+            <legend>Opções de Resposta</legend>
+            E-mail<input name="resposta" type="checkbox"value="email">
+            Telefone<input name="resposta" type="checkbox"value="phone">
+          </fieldset>
+        </li>
+        <li>
+          <input type="submit" value="Enviar">
+        </li>
+      </form>
     </main>
     <footer>
+      <p><a href="https://www.facebook.com/ifsppirituba"><img src="Imagens\facebook.png" width="40" title="Facebook IFSP-PTB" alt="Facebook IFSP-PTB"/></a></p>
+      <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>
     </footer>
   </body>
 </html>
