@@ -5,37 +5,59 @@
     <meta name="viewport" content="width=device-width">
     <title>HOME - IFSP - Pirituba</title>
     <link rel="shortcut icon" href="Imagens/favicon.ico"/>
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <header id="cabecalho">
-      <div align="right">
-        <a href="index.html">HOME</a> | <a href="eventos.html">EVENTOS</a> | <a href="contato.html">CONTATO</a> | <a href="sobre.html">SOBRE</a> | <a href="entrar.html">ENTRAR</a>
+    <header>
+      <div id="menu_horizontal">
+        <ul>
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <a href="eventos.html">EVENTOS</a>
+          </li>
+          <li>
+            <a href="contato.html">CONTATO</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropbtn">CURSOS</a>
+            <div class="dropdown-content">
+            <a href="ads.html">Análise e Desenvolvimento de Sistemas</a>
+            <a href="eng_prod.html">Engenharia de Produção</a>
+            </div>
+          </li>
+          <li>
+            <a href="entrar.html">ENTRAR</a>
+          </li>
+          <li id="right">
+            <a href="sobre.html">SOBRE</a>
+          </li>
+        </ul>
+        <img src="Imagens/Logo.jpg"/>
       </div>
-      <img src="Imagens/Logo.jpg"/>
     </header>
     <main>
-      <p><strong>Cursos</strong></p>
-      <ul>
-        <li><a href="ads.html"> Análise e Desenvolvmento de Sistemas</a></li>
-        <li><a href="eng_prod.html"> Engenharia de Produção</a></li>
-        <li><a href="gti.html"> Gestão em Tecnologia da Informação</a></li>
-        <li><a href="letras.html"> Letras</a></li>
-        <li><a href="gest_pub.html"> Gestão Pública</a></li>
-      </ul>
-      <aside>
-        <p><b>Eventos</b></p>
-        <img src="Imagens\SEJA_RARO.jpg" width="700"/>
-        <p>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</p>
-        <h2>Sobre a Biblioteca</h2>
-        <img src="Imagens\library.jpeg"/>
-        <h2>Conheça os novos títulos disponíveis na nossa biblioteca</h2>
-        <h6>Publicado: Quarta-feira, 14 de agosto de 2019</h6>
-        <h2>Conheça o SUAP</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/yVbOcB1ryh0"></iframe>
-      </aside>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="Imagens/eleicoes.jpg"/ width="400"><p><b>Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</b><br>Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus</p>
+        </div>
+        <div class="grid-item">
+          <img src="Imagens/snct.jpg"/ width="400"><p><b>IFSP: SNCT reúne atividades entre 19 e 24 de outubro</b><br>Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais</p>
+        </div>
+        <div class="grid-item">
+          <img src="Imagens/residencia.png"/ width="400"><p><b>IFSP oferece bolsa aos voluntários da Residência Pedagógica</b><br>Bolsa de R$ 400,00 será paga pelo período de três meses</p>
+        </div>
+        <div class="grid-item">
+          <img src="Imagens/maratona.jpeg"/ width="400"><p><b>Inscrições abertas para a III Maratona InterIF</b><br>Maratona de programação do IFSP será realizada online, no dia 31 de outubro; inscrições até 26 de outubro</p>
+        </div>
+      </div>
+      <h1 class="title"><strong>Conheça os desafios da inovação</strong></h1>
+      <p align="center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po"></iframe>
+      </p>
     </main>
     <footer>
-      <p><a href="#cabecalho"><img src="Imagens\MoveTop.png"width="40"  title="Mover para o topo" alt="Mover para o topo"/></a></p>
       <p><a href="https://www.facebook.com/ifsppirituba"><img src="Imagens\facebook.png" width="40" title="Facebook IFSP-PTB" alt="Facebook IFSP-PTB"/></a></p>
       <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p>
     </footer>

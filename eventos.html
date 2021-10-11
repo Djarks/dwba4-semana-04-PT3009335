@@ -5,13 +5,37 @@
     <meta name="viewport" content="width=device-width">
     <title>Eventos - IFSP - Pirituba</title>
     <link rel="shortcut icon" href="Imagens/favicon.ico"/>
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <header id="cabecalho">
-      <div align="right">
-        <a href="index.html">HOME</a> | <a href="eventos.html">EVENTOS</a> | <a href="contato.html">CONTATO</a> | <a href="sobre.html">SOBRE</a> | <a href="entrar.html">ENTRAR</a>
+    <header>
+      <div id="menu_horizontal">
+        <ul>
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <a href="eventos.html">EVENTOS</a>
+          </li>
+          <li>
+            <a href="contato.html">CONTATO</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropbtn">CURSOS</a>
+            <div class="dropdown-content">
+            <a href="ads.html">Análise e Desenvolvimento de Sistemas</a>
+            <a href="eng_prod.html">Engenharia de Produção</a>
+            </div>
+          </li>
+          <li>
+            <a href="entrar.html">ENTRAR</a>
+          </li>
+          <li id="right">
+            <a href="sobre.html">SOBRE</a>
+          </li>
+        </ul>
+        <img src="Imagens/Logo.jpg"/>
       </div>
-      <img src="Imagens/Logo.jpg"/>
     </header>
     <main>
       <h1><strong>Inscreva-se</strong></h1>
@@ -40,8 +64,8 @@
           <input type="text" name="nome_compl" id="nome_compl" required><br><br>
         <label for="email">E-Mail</label>
           <input type="text" name="email" id="email" required><br><br>
-        <label for="celular">Celular</label>
-          <input type="text" name="celular" id="celular" required> (99) 99999-9999<br><br>
+        <label for="celular">Celular (99) 99999-9999</label>
+          <input type="text" name="celular" id="celular" required> <br><br>
         <fieldset>
           <legend>Sexo</legend>
           Masculino<input type="radio" value="masc" name="sexo"/>
@@ -58,6 +82,7 @@
         </fieldset>
         <br>
         <input type="submit" value="Inscrever">
+        <br><br>
         <input type="submit" value="Limpar">
       </form>
     </main>
