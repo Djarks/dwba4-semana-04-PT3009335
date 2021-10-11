@@ -109,3 +109,13 @@ form{
   background-color: whitesmoke;
   border-radius: 4px;
 }
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 50px;
+}
+
+.grid-item{
+  text-align: center;
+}
