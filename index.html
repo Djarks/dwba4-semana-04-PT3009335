@@ -6,6 +6,7 @@
     <title>HOME - IFSP - Pirituba</title>
     <link rel="shortcut icon" href="Imagens/favicon.ico"/>
     <link rel="stylesheet" href="style.css"/>
+    <script defer src="js/script.js"></script>
   </head>
   <body>
     <header>
@@ -38,6 +39,39 @@
       </div>
     </header>
     <main>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="Imagens/A.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="Imagens/B.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="Imagens/C.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <h1 class="title"><strong>Conheça os desafios da inovação</strong></h1>
+          <p align="center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po"></iframe>
+          </p>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
       <div class="grid-container">
         <div class="grid-item">
           <img src="Imagens/eleicoes.jpg"/ width="400"><p><b>Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</b><br>Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus</p>
@@ -52,10 +86,6 @@
           <img src="Imagens/maratona.jpeg"/ width="400"><p><b>Inscrições abertas para a III Maratona InterIF</b><br>Maratona de programação do IFSP será realizada online, no dia 31 de outubro; inscrições até 26 de outubro</p>
         </div>
       </div>
-      <h1 class="title"><strong>Conheça os desafios da inovação</strong></h1>
-      <p align="center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po"></iframe>
-      </p>
     </main>
     <footer>
       <p><a href="https://www.facebook.com/ifsppirituba"><img src="Imagens\facebook.png" width="40" title="Facebook IFSP-PTB" alt="Facebook IFSP-PTB"/></a></p>
